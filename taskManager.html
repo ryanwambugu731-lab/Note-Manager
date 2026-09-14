@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="TM-Style.css" />
+    <script src="TM-Script.js" defer></script>
+    <title>Final Task Manager</title>
+  </head>
+  <body>
+    <!-- 1. Main title -->
+    <header class="note-pad-title">
+      <div>
+        <h1>Note Pad</h1>
+        <!-- <h1>Tasks</h1> -->
+      </div>
+    </header>
+    <main>
+      <!-- 2. Add button -->
+      <div class="note-add">
+        <button class="add-button" title="Add New Note">
+          <ion-icon name="add-outline" class="add-icon"></ion-icon>
+        </button>
+        <h2>Notes</h2>
+      </div>
+      <!-- 3. Overlay for blurring background -->
+      <div class="overlay"></div>
+
+      <!-- Note Format -->
+      <div class="note-container">
+        <div class="note">
+          <div>
+            <!-- 4. Input field for the note title -->
+            <input
+              type="text"
+              name="note-title"
+              placeholder="Title"
+              class="note-title"
+            />
+          </div>
+          <!-- 5. Meta data about the new note that is made -->
+          <div class="meta">
+            <p class="extra-info">
+              <span class="day">day</span> <span class="month">month</span>
+              <span class="time">time</span> |
+              <span class="num-char">0</span> characters
+            </p>
+          </div>
+          <!-- 6. Textarea field for the note's content -->
+          <div class="note-content">
+            <textarea
+              type="text"
+              name="note-description"
+              placeholder="Write Something......"
+              class="note-description"
+            ></textarea>
+          </div>
+          <!-- 7.Finish button that will make the actual note get saved  -->
+          <div class="note-finish-btn">
+            <button class="finish-btn">Finish</button>
+          </div>
+        </div>
+      </div>
+      <!-- 8. This is where the finished notes will be stored -->
+      <div class="note-list-container">
+        <div class="note-list">
+          <!-- 9. The grid container responsible for displaying the notes -->
+            <!-- <div class="note-list-item">
+              <h4></h4>
+              <p></p>
+            </div>       -->
+      </div>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
